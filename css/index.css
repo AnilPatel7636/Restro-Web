@@ -1,0 +1,336 @@
+/* navbar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: grey;
+    height: 4rem;
+    
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1;
+   
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute ;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#logo img{
+    height:3.5rem;
+    margin:50px;
+}
+#logo img:hover{
+    /* transform: skew(20deg,16deg); */
+    /* transform: rotateZ(20deg); */
+    height:5rem
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 2px,25px;
+    border-radius:20px;
+    text-decoration: none;
+    margin: 2em;
+    
+}
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;   
+}
+div li{
+    list-style: none;
+    font-size: 2.5rem;
+}
+div button{
+    color: black;
+    margin-left: 124px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 4px,8px;
+    cursor: pointer;
+    
+}
+div button:hover{
+    color:white;
+    background-color: black;
+   
+    
+}
+/* Home Section */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 510px;
+    justify-content: center;
+    align-items: center;
+}
+#Home::before{ 
+    content: "";
+    position: absolute;
+    background: url('/images/dashboardbg.jpg.jpg') no-repeat center center/cover;
+    height: 602px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#Home h1 {
+    color:yellow;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Home h3 {
+    color:rgb(14, 196, 199);
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+#Home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#Home p:hover{
+    font-size: 1.58rem;
+}
+
+
+/* services */
+#Services{
+    margin: 34px;
+    display: flex;
+}
+
+
+.heading{
+    font-size: 3rem;
+}
+#Services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #a2a7ae;
+    margin-bottom: 20px;
+}
+
+#Services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+#Services::before{ 
+    content: "";
+    position: absolute;
+    background: url('/images/bg1.jpg.jpg') center center/cover;
+    height: 546px;
+    top:600px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+/* menuu */
+#Menu{
+    margin: 34px;
+    display: flex;
+}
+
+
+
+#Menu .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    
+    margin-bottom: 20px;
+}
+#veg{
+    background: #5aa377;
+}
+#nveg{
+    background: #9d5959;
+}
+
+#Menu .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+#Menu::before{ 
+    content: "";
+    position: absolute;
+    background: url('/images/salad.jpg.jpg') center center/cover;
+    height: 562px;
+    top:1140px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+/* aboutus */
+#About-Us{
+    margin: 34px;
+    display: flex;
+}
+
+
+
+#About-Us .box{ 
+   
+    
+    margin: 2px 55px;
+    
+  
+    margin-bottom: 20px;
+}
+
+
+
+#About-Us::before{ 
+    content: "";
+    position: absolute;
+    background: url('/images/aboutus.jpg') center center/cover;
+    height: 300px;
+    top:1702px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+/* feedbackk */
+#feedback-container{
+    position: relative;
+}
+#feedback-container::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/images/partner.jpg.jpg') no-repeat center center/cover;
+
+}
+#Feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 86px;
+}
+#Feedback input, 
+#Feedback textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    background-color: rgb(223, 237, 145);
+} 
+
+#Feedback form{
+    width: 40%;
+}
+
+#Feedback label{
+   font-size: 1.3rem;
+   
+
+}
+/* contactcntr */
+#contact-us{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.boxes img{
+    height: 50px;
+   margin: auto;
+   display:inline-block;
+   margin-left: 80px;
+   margin-right: 80px;
+
+
+}
+.boxes img:hover{
+    cursor: pointer;
+    height: 58px;
+}
+
+/* footerss */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    margin-top: 35px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.ok{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.ok input{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+.ok input:hover{
+    color: rgb(17, 189, 37);
+    
+    
+}
+h2{
+    
+    border: 2px solid black;
+    border-radius: 20px;
+    
+   
+
+    
+}
+h2:hover{
+    color: green;
+    cursor: pointer;
+}
+
+
+
+.center{
+    text-align: center;
+}
